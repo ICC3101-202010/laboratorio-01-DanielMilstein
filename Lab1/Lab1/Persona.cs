@@ -6,6 +6,7 @@ namespace Lab1
     {
         public string Nombre;
         public string Apellido;
+        public int Choice;
 
         public Persona()
         {
@@ -23,10 +24,13 @@ namespace Lab1
             Apellido = apellido;
         }
 
-//        public int Lanzar()
-//        {
-//            Random.Next();
-//        }
+        public int Lanzar()
+        {
+            Random rand = new Random();
+            Choice = rand.Next(0, 3);
+            return Choice;
+
+        }
     }
 
 }
