@@ -7,6 +7,11 @@ namespace Lab1
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            var p1 = new Persona();
+            //p1.Nombre = "Bob";
+            //p1.Apellido = "Kunga";
+            Console.WriteLine(p1.Nombre);
+            Console.WriteLine(p1.Apellido);
         }
     }
 }
